@@ -1,0 +1,175 @@
+//out: ../css/
+.main {
+    width: 100%;
+
+    // 优秀学员
+    .best-student {
+        width: 1200px;
+        padding-top: 150px;
+        text-align: center;
+
+        .student-list {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 60px;
+            margin-bottom: 60px;
+            width: 1200px;
+            height: 288px;
+
+            .item-student {
+                width: 282px;
+                height: 100%;
+                border-radius: 20px;
+                background: linear-gradient(147.89deg, rgba(247, 252, 255, 1) 0%, rgba(255, 255, 255, 1) 53.09%, rgba(247, 252, 255, 1) 100%);
+                border: 1px solid rgba(255, 255, 255, 1);
+                box-shadow: 0px 11px 25px rgba(156, 159, 165, 0.1), 0px 45px 45px rgba(156, 159, 165, 0.09);
+
+                img {
+                    width: 282px;
+                    height: 158px;
+                    border-radius: 20px 20px 0 0;
+                }
+
+                .title {
+                    margin-top: 20px;
+                    margin-left: 20px;
+                    font-size: 24px;
+                    font-weight: 400;
+                    letter-spacing: 0px;
+                    line-height: 28.13px;
+                    color: rgba(51, 51, 51, 1);
+                    text-align: start;
+                }
+
+                .subtitle {
+                    margin-top: 10px;
+                    margin-left: 20px;
+                    font-size: 18px;
+                    font-weight: 400;
+                    letter-spacing: 0px;
+                    line-height: 21.1px;
+                    color: rgba(24, 66, 182, 1);
+                    text-align: start;
+                }
+
+                .content {
+                    margin-top: 10px;
+                    margin-left: 20px;
+                    font-size: 16px;
+                    font-weight: 400;
+                    letter-spacing: 0px;
+                    line-height: 18.75px;
+                    color: rgba(51, 51, 51, 1);
+                    text-align: start;
+                }
+
+                &:hover {
+                    background: rgba(24, 66, 182, 1);
+                }
+
+                &:hover .title,
+                &:hover .subtitle,
+                &:hover .content {
+                    color: rgba(255, 255, 255, 1);
+                }
+            }
+        }
+
+        .more {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+            font-weight: 400;
+            letter-spacing: 0px;
+            line-height: 21.1px;
+            color: rgba(51, 51, 51, 1);
+
+            span {
+                margin-left: 10px;
+                font-size: 12px;
+                color: rgba(51, 51, 51, 1);
+            }
+
+            &:hover,
+            &:hover span {
+                color: rgba(24, 66, 182, 1);
+            }
+        }
+    }
+
+    // 教学课堂
+    .classroom {
+        width: 1200px;
+        padding-top: 150px;
+
+        .nav-list {
+            display: flex;
+            justify-content: space-between;
+            width: 903px;
+            height: 76px;
+            margin-top: 60px;
+            margin-bottom: 40px;
+            padding: 6px;
+            opacity: 1;
+            border-radius: 20px;
+            background: rgba(247, 251, 254, 1);
+            border: 1px solid rgba(228, 231, 235, 1);
+
+            .item-nav {
+                width: 297px;
+                height: 64px;
+                opacity: 1;
+                font-size: 20px;
+                font-weight: 400;
+                letter-spacing: 0px;
+                line-height: 64px;
+                color: rgba(51, 51, 51, 1);
+                text-align: center;
+
+                &.active {
+                    border-radius: 16px;
+                    background: rgba(255, 255, 255, 1);
+                    box-shadow: 0px 2px 4px rgba(223, 234, 242, 0.39), 0px 10px 20px 10px rgba(223, 234, 242, 0.2);
+                }
+            }
+        }
+
+        .task-list {
+            width: 100%;
+
+            .item-task {
+                display: none;
+
+                .classroom-list {
+                    display: flex;
+                    flex-wrap: wrap;
+                    width: 100%;
+                    padding-top: 60px;
+
+                    .item-classroom {
+                        width: 386px;
+                        height: 216px;
+                        margin-right: 21px;
+                        margin-bottom: 21px;
+                        border-radius: 10px;
+
+                        img {
+                            width: 386px;
+                            height: 216px;
+                            border-radius: 10px;
+                        }
+
+                        &:nth-child(3n) {
+                            margin-right: 0;
+                        }
+                    }
+                }
+
+                &.active {
+                    display: block;
+                }
+            }
+        }
+    }
+}

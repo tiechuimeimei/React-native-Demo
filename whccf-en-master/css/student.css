@@ -1,0 +1,149 @@
+.main {
+  width: 100%;
+}
+.main .best-student {
+  width: 1200px;
+  padding-top: 150px;
+  text-align: center;
+}
+.main .best-student .student-list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  width: 1200px;
+  height: 288px;
+}
+.main .best-student .student-list .item-student {
+  width: 282px;
+  height: 100%;
+  border-radius: 20px;
+  background: linear-gradient(147.89deg, #f7fcff 0%, #ffffff 53.09%, #f7fcff 100%);
+  border: 1px solid #ffffff;
+  box-shadow: 0px 11px 25px rgba(156, 159, 165, 0.1), 0px 45px 45px rgba(156, 159, 165, 0.09);
+}
+.main .best-student .student-list .item-student img {
+  width: 282px;
+  height: 158px;
+  border-radius: 20px 20px 0 0;
+}
+.main .best-student .student-list .item-student .title {
+  margin-top: 20px;
+  margin-left: 20px;
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 0px;
+  line-height: 28.13px;
+  color: #333333;
+  text-align: start;
+}
+.main .best-student .student-list .item-student .subtitle {
+  margin-top: 10px;
+  margin-left: 20px;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0px;
+  line-height: 21.1px;
+  color: #1842b6;
+  text-align: start;
+}
+.main .best-student .student-list .item-student .content {
+  margin-top: 10px;
+  margin-left: 20px;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0px;
+  line-height: 18.75px;
+  color: #333333;
+  text-align: start;
+}
+.main .best-student .student-list .item-student:hover {
+  background: #1842b6;
+}
+.main .best-student .student-list .item-student:hover .title,
+.main .best-student .student-list .item-student:hover .subtitle,
+.main .best-student .student-list .item-student:hover .content {
+  color: #ffffff;
+}
+.main .best-student .more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0px;
+  line-height: 21.1px;
+  color: #333333;
+}
+.main .best-student .more span {
+  margin-left: 10px;
+  font-size: 12px;
+  color: #333333;
+}
+.main .best-student .more:hover,
+.main .best-student .more:hover span {
+  color: #1842b6;
+}
+.main .classroom {
+  width: 1200px;
+  padding-top: 150px;
+}
+.main .classroom .nav-list {
+  display: flex;
+  justify-content: space-between;
+  width: 903px;
+  height: 76px;
+  margin-top: 60px;
+  margin-bottom: 40px;
+  padding: 6px;
+  opacity: 1;
+  border-radius: 20px;
+  background: #f7fbfe;
+  border: 1px solid #e4e7eb;
+}
+.main .classroom .nav-list .item-nav {
+  width: 297px;
+  height: 64px;
+  opacity: 1;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0px;
+  line-height: 64px;
+  color: #333333;
+  text-align: center;
+}
+.main .classroom .nav-list .item-nav.active {
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 0px 2px 4px rgba(223, 234, 242, 0.39), 0px 10px 20px 10px rgba(223, 234, 242, 0.2);
+}
+.main .classroom .task-list {
+  width: 100%;
+}
+.main .classroom .task-list .item-task {
+  display: none;
+}
+.main .classroom .task-list .item-task .classroom-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding-top: 60px;
+}
+.main .classroom .task-list .item-task .classroom-list .item-classroom {
+  width: 386px;
+  height: 216px;
+  margin-right: 21px;
+  margin-bottom: 21px;
+  border-radius: 10px;
+}
+.main .classroom .task-list .item-task .classroom-list .item-classroom img {
+  width: 386px;
+  height: 216px;
+  border-radius: 10px;
+}
+.main .classroom .task-list .item-task .classroom-list .item-classroom:nth-child(3n) {
+  margin-right: 0;
+}
+.main .classroom .task-list .item-task.active {
+  display: block;
+}
