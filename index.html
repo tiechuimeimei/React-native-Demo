@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta id="viewPorts" name="viewport" content="width=device-width">
+<meta name="keywords" content="维修,专业，住家水电,办公设备" />
+<meta name="keywords" content="XJ Service, xjservice, 维修服务,专业维修" />
+<script>
+//不同分辨率手机加载
+var appVersion = window.navigator.appVersion;
+var platform = '', viewPorts = '';
+if(appVersion.toLowerCase().indexOf('android')){
+	platform = 'android';
+}else if(appVersion.indexOf('iPhone') || appVersion.indexOf('iPod') || appVersion.indexOf('iPad')){
+	platform = 'ios';
+}
+var winWidth = window.screen.width,
+	targetDensitydpi = winWidth / 640;
+switch(platform){
+	case 'android':
+		var devicePixelRatio = window.devicePixelRatio;
+		targetDensitydpi = 640 / winWidth * devicePixelRatio * 160;
+		viewPorts = 'width=640,target-densitydpi=' + targetDensitydpi + ',user-scalable=no';
+		break;
+	case 'ios':
+		viewPorts = 'width=640,initial-scale=' + targetDensitydpi + ',mininum-scale=' + targetDensitydpi +',maxinum-scale=' + targetDensitydpi + ',user-scalable=no';
+		break;
+}
+if(viewPorts){
+	document.getElementById('viewPorts').setAttribute('content', viewPorts);
+}
+</script>
+
+<meta name="description" content="" />
+<title>XJ Service</title>
+<link rel="shortcut icon" href="images/favicon.ico" />
+<link rel="stylesheet" type="text/css" href="css/base.css" />
+<link rel="stylesheet" type="text/css" href="css/common.css" />
+<link rel="stylesheet" type="text/css" href="css/nav.css" />
+<link rel="stylesheet" type="text/css" href="css/index.css" />
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.SuperSlide.js"></script>
+<script type="text/javascript" src="js/modernizr.custom.js"></script>
+<script type="text/javascript" src="js/jquery.dlmenu.js"></script>
+<script type="text/javascript" src="js/collect.js"></script>
+<script>
+$(document).ready(function(){
+	$(".nav ul li").hover(function(){
+		$(this).addClass("on").siblings("li").removeClass("on");
+		$(this).find("p.sub").show().siblings("li").find("p.sub").stop(false,true).hide();
+	},function(){
+		$(this).removeClass("on");
+		$(this).find("p.sub").stop(false,true).hide();
+	});
+});
+</script>
+</head>
+
+<body>
+<div class="wrap">
+	<!--头部 开始-->
+	<div class="header">
+		<div class="head">
+			<h1 class="logo"><a href="index.html"><img src="images/common/logo.png" alt="XJ Service " /></a></h1>
+			<h1 class="logo-title">XJ Service</h1>
+		</div>
+	</div>
+	<!--头部 结束-->
+	<!--导航 开始-->
+	<!-- <div id="dl-menu" class="dl-menuwrapper">
+		<a class="menu" id="dl-menu-button" href="javascript:void(0)"></a>
+		<ul class="dl-menu">
+			<li><a href="index.html">网站首页</a></li>
+			<li><a href="page.html">中央空调清洗服务</a></li>
+			<li><a href="about.html">中央空调维保服务</a></li>
+			<li><a href="about.html">中央空调维修服务</a></li>
+			<li><a href="about.html">空气净化消毒</a></li>
+			<li><a href="case.html">工程案例</a></li>
+			<li><a href="honor.html">企业资质</a></li>
+			<li><a href="about.html">关于我们</a></li>
+			<li><a href="about.html">关于价格</a></li>
+			<li><a href="about.html">联系我们</a></li>
+		</ul>
+	</div> -->
+	<!-- <script type="text/javascript">
+	$(function(){
+		$("#dl-menu").dlmenu();
+	});
+	</script> -->
+	<!--导航 结束-->
+	<!--banner 开始-->
+	<div class="ibanner">
+		<div class="bd">
+			<ul>
+				<li><a style="background:url(images/upload/banner1.jpg) center no-repeat;"></a></li>
+				<li><a style="background:url(images/upload/banner2.jpg) center no-repeat;"></a></li>
+			</ul>
+		</div>
+		<div class="hd">
+			<ul></ul>
+		</div>
+	</div>
+	<script type="text/javascript">
+		jQuery(".ibanner").slide({
+			effect:"leftLoop",
+			titCell: ".hd ul",
+			mainCell: ".bd ul",
+			autoPlay: true,
+			autoPage: true,
+			trigger: "click",
+			delayTime: 480,
+			interTime: 3600,//间隔时间
+			triggerTime: 150
+		});
+	</script>
+	<!--banner 结束-->
+	<!-- 关于我们 开始 -->
+	<div class="main">
+		<div class="attr">
+			<h2 class="title"><span>关于我们</span><i></i></h2>
+			<div class="article">
+				　　我们的公司专注于提供多样化的维修服务，致力于满足大众的各种需求。以精湛的维修技术为核心，我们以专业维修为主要业务，服务领域覆盖了各类设备故障的修复。无论是办公设备、家用电器，还是其他各种机械设备，我们的专业团队都能迅速诊断问题，提供高效的维修解决方案。<br>
+				　　此外，我们还提供厨房设备的维修和保养服务。针对厨房设备的特殊性质，我们有着丰富的经验和专业的技能，能够确保设备的正常运行，延长设备的使用寿命。<br>
+				　　同时，我们也提供住家的水电安装及维修服务。我们的技师具备丰富的水电安装和维修经验，能够迅速解决住家水电方面的问题，确保居住环境的舒适和安全。<br>
+				　　我们的公司以专业、高效、优质的服务赢得了广大客户的信赖和好评。我们将继续努力，提供更多、更好的服务，为大众的生活提供便利。<br>
+				　　联系电话： (+65) 93823537<br>
+			</div>
+		</div>
+	</div>
+	<!-- 关于我们 结束 -->
+	<!--主体 开始-->
+	<div class="main">
+		<!--第一部分 结束-->
+		<div class="slogan">
+			<p>
+				<!-- <span><img src="images/icons/slg01.png" />15年老品牌 企业实力强 售后无忧</span> -->
+				<!-- <span><img src="images/icons/slg02.png" />各项费用明确标注 服务期间杜绝乱收费</span> -->
+				<span><img src="images/icons/slg03.png" />专业资质，免费上门勘查现场</span>
+			</p>
+		</div>
+		<!--第二部分 开始-->
+		<!--第一部分 开始-->
+		<div class="ibox box1">
+			<div class="con">
+				<h2><span>服务项目</span><i></i><em>专业提供中央空调维修、维护、保养、清洗、安装、销售，节能改造，托管服务</em></h2>
+				<ul class="pic">
+					<li><a><img src="images/upload/xm01.jpg" /><span><img src="images/icons/xm01.png" />中央空调维修</span></a></li>
+					<li><a><img src="images/upload/xm02.jpg" /><span><img src="images/icons/xm02.png" />中央空调维保</span></a></li>
+					<li><a><img src="images/upload/xm03.jpg" /><span><img src="images/icons/xm03.png" />中央空调清洗</span></a></li>
+					<li><a><img src="images/upload/xm04.jpg" /><span><img src="images/icons/xm04.png" />中央空调安装改造</span></a></li>
+					<li><a><img src="images/upload/xm05.jpg" /><span><img src="images/icons/xm05.png" />中央空调运行</span></a></li>
+					<li><a><img src="images/upload/xm06.jpg" /><span><img src="images/icons/xm06.png" />中央空调水处理</span></a></li>
+				</ul>
+			</div>
+		</div>
+		<!--第一部分 结束-->
+		<div class="slogan">
+			<p>
+				<!-- <span><img src="images/icons/slg01.png" />15年老品牌 企业实力强 售后无忧</span> -->
+				<span><img src="images/icons/slg02.png" />各项费用明确标注 服务期间杜绝乱收费</span>
+				<!-- <span><img src="images/icons/slg03.png" />专业资质，免费上门勘查现场</span> -->
+			</p>
+		</div>
+		<!--第二部分 开始-->
+		<div class="ibox box2">
+			<div class="con">
+				<h2><span>中央空调维保维修设备种类</span><i></i><em>具有专业的集中式空调设备维修安装A类资质</em></h2>
+				<ul class="pic">
+					<li><a><img src="images/upload/wb01.jpg" /><span>螺杆机</span></a></li>
+					<li><a><img src="images/upload/wb02.jpg" /><span>离心机</span></a></li>
+					<li><a><img src="images/upload/wb03.jpg" /><span>地源热泵机组</span></a></li>
+					<li><a><img src="images/upload/wb04.jpg" /><span>空气源热泵机组</span></a></li>
+					<li><a><img src="images/upload/wb05.jpg" /><span>多联机</span></a></li>
+					<li><a><img src="images/upload/wb06.jpg" /><span>风冷模块机组</span></a></li>
+					<li><a><img src="images/upload/wb07.jpg" /><span>水冷模块机组</span></a></li>
+					<li><a><img src="images/upload/wb08.jpg" /><span>家用机</span></a></li>
+				</ul>
+			</div>
+		</div>
+		<!--第二部分 结束-->
+		<!--第五部分 开始-->
+		<!-- <div class="ibox box5">
+			<div class="con">
+				<h2><span>检测报告</span><i></i><em></em></h2>
+				<ul class="pic">
+					<li><a><img src="images/upload/baogao.jpg" /></a></li>
+					<li><a><img src="images/upload/baogao.jpg" /></a></li>
+					<li><a><img src="images/upload/baogao.jpg" /></a></li>
+					<li><a><img src="images/upload/baogao.jpg" /></a></li>
+					<li><a><img src="images/upload/baogao.jpg" /></a></li>
+					<li><a><img src="images/upload/baogao.jpg" /></a></li>
+				</ul>
+			</div>
+		</div> -->
+		<!--第五部分 结束-->
+		<!--第六部分 开始-->
+		<div class="ibox box6">
+			<div class="con">
+				<h2><span>业务流程</span><i></i><em></em></h2>
+				<ul class="liuc">
+					<li><em>01</em><i></i><span>约见客户</span></li>
+					<li><em>02</em><i></i><span>勘察现场</span></li>
+					<li><em>03</em><i></i><span>双方沟通了解需求</span></li>
+					<li><em>04</em><i></i><span>提供方案报价</span></li>
+					<li><em>05</em><i></i><span>洽谈合同</span></li>
+					<li><em>06</em><i></i><span>进场施工</span></li>
+					<li><em>07</em><i></i><span>验收</span></li>
+					<li><em>08</em><i></i><span>结账</span></li>
+				</ul>
+			</div>
+		</div>
+		<!--第六部分 结束-->
+		<!--第七部分 开始-->
+		<!-- <div class="ibox box7">
+			<h2><span>服务项目工程 满足不同行业需求</span><i></i><em></em></h2>
+			<div class="con">
+				<ul class="tab">
+					<li><a href="javascript:void(0)"><i></i>写字楼</a></li>
+					<li><a href="javascript:void(0)"><i></i>机关办公楼</a></li>
+					<li><a href="javascript:void(0)"><i></i>酒店餐饮</a></li>
+					<li><a href="javascript:void(0)"><i></i>商场超市</a></li>
+					<li><a href="javascript:void(0)"><i></i>医疗行业</a></li>
+					<li><a href="javascript:void(0)"><i></i>教育行业</a></li>
+					<li><a href="javascript:void(0)"><i></i>楼盘楼宇</a></li>
+				</ul>
+				<div class="tbox">
+					<h3><a>项目名称：某某某写字楼</a></h3>
+					<h3>项目说明：</h3>
+					<div class="txt">某某某写字楼某某某写字楼某某某写字楼某某某写字楼某某某写字楼某某某写字楼某某某写字楼某某某</div>
+					<a class="pic"><img src="images/upload/project.jpg"></a>
+				</div>
+				<div class="tbox">
+					<h3><a>项目名称：某某某机关</a></h3>
+					<h3>项目说明：</h3>
+					<div class="txt">某某某机关某某某机关某某某机关某某某机关某某某机关某某某机关某某某机关某某某</div>
+					<a class="pic"><img src="images/upload/project.jpg"></a>
+				</div>
+				<div class="tbox">
+					<h3><a>项目名称：某某某酒店</a></h3>
+					<h3>项目说明：</h3>
+					<div class="txt">某某某酒店某某某酒店某某某酒店某某某酒店某某某酒店某某某酒店某某某酒店某某某</div>
+					<a class="pic"><img src="images/upload/project.jpg"></a>
+				</div>
+				<div class="tbox">
+					<h3><a>项目名称：某某某商场</a></h3>
+					<h3>项目说明：</h3>
+					<div class="txt">某某某商场某某某商场某某某商场某某某商场某某某商场某某某商场某某某商场某某某</div>
+					<a class="pic"><img src="images/upload/project.jpg"></a>
+				</div>
+				<div class="tbox">
+					<h3><a>项目名称：某某某医疗</a></h3>
+					<h3>项目说明：</h3>
+					<div class="txt">某某某医疗某某某医疗某某某医疗某某某医疗某某某医疗某某某医疗某某某医疗某某某</div>
+					<a class="pic"><img src="images/upload/project.jpg"></a>
+				</div>
+				<div class="tbox">
+					<h3><a>项目名称：某某某教育</a></h3>
+					<h3>项目说明：</h3>
+					<div class="txt">某某某教育某某某教育某某某教育某某某教育某某某教育某某某教育某某某教育某某某</div>
+					<a class="pic"><img src="images/upload/project.jpg"></a>
+				</div>
+				<div class="tbox">
+					<h3><a>项目名称：某某某楼盘</a></h3>
+					<h3>项目说明：</h3>
+					<div class="txt">某某某楼盘某某某楼盘某某某楼盘某某某楼盘某某某楼盘某某某楼盘某某某楼盘某某某</div>
+					<a class="pic"><img src="images/upload/project.jpg"></a>
+				</div>
+			</div>
+			<script>
+				$(document).ready(function(){
+					$(".box7 ul.tab li:first").addClass("cur");
+					$(".box7 .tbox:first").show();
+					$(".box7 ul.tab li").click(function(){
+						$(this).addClass("cur").siblings("li").removeClass("cur");
+						$(".box7 .tbox").eq($(this).index()).fadeIn(320).siblings(".tbox").hide();
+					});
+				});
+			</script>
+		</div> -->
+		<!--第七部分 结束-->
+		
+		<!--第八部分 开始-->
+		<!-- <div class="ibox box8">
+			<div class="con">
+				<h2><span>专业的维保 称心的服务</span><i></i><em>专业提供中央空调维修、维护、保养、清洗、安装、销售，节能改造，托管服务</em></h2>
+				<img class="pic" src="images/upload/weibao.jpg" />
+				<dl>
+					<dt>中央空调长期不维保会发生什么？</dt>
+					<dd>1、在长期运转下，制冷主机、空调水系统内外表面会积累污垢，产生沉淀，不可避免出现水垢、锈蚀；</dd>
+					<dd>2、空调主机、水泵、冷却塔、阀门等系统设备会出现机械磨损、润滑老化；</dd>
+					<dd>3、集中空调送风管、回风管、风口、风机盘管等处会滋生细菌、粉尘等问题；</dd>
+					<dd>4、导致系统能效降低、制冷能力减弱；</dd>
+					<dd>5、设备使用寿命缩短，运行可靠性降价；</dd>
+					<dd>6、能耗提高，增加运行费用。</dd>
+					<dt>中央空调维保五大优点</dt>
+					<dd>1、减少制冷空调及设备故障率的发生；</dd>
+					<dd>2、维持和改善空调系统及设备的性能；</dd>
+					<dd>3、保障空调系统正常运行；</dd>
+					<dd>4、消除异味病菌，有效保护人员身体健康；</dd>
+					<dd>5、高效、安全、经济运行。</dd>
+				</dl>
+			</div>
+		</div> -->
+		<!--第八部分 结束-->
+		<!--第九部分 开始-->
+		<!-- <div class="ibox box9">
+			<div class="con">
+				<h2><span>工程案例</span><i></i><em>北京海浩拥有一支经验丰富、敬业乐业的专业施工队伍</em></h2>
+				<ul class="case">
+					<li><a href="info.html"><img src="images/upload/case01.jpg"><span>妇女儿童博物馆</span></a></li>
+					<li><a href="info.html"><img src="images/upload/case02.jpg"><span>北京佰仁医疗科技股份有限公司</span></a></li>
+					<li><a href="info.html"><img src="images/upload/case03.jpg"><span>北大医疗康复医院</span></a></li>
+					<li><a href="info.html"><img src="images/upload/case04.jpg"><span>北京创客小镇</span></a></li>
+				</ul>
+				<a class="more" href="case.html">查看更多&gt;&gt;</a>
+			</div>
+		</div> -->
+		<!--第九部分 结束-->
+	</div>
+	<!--主体 结束-->
+	<!--底部 开始-->
+	<div class="footer">
+		
+			
+		<!-- 版权所有 XJ service Email:  -->
+		<div class="copyright">
+			<img src="images/common/tel.png" /> &nbsp; S520113 &amp; (+65) 93823537 &emsp;&emsp;&emsp;
+			<img src="images/common/mail.png" /> &nbsp; xjservice90@gmail.com &emsp;&emsp;&emsp;&nbsp;<br>
+			版权所有 XJ service &nbsp;<img src="images/common/addr.png" /> &nbsp; Block 113 Simei St1 #06-662<br>
+			
+		</div>
+	</div>
+	<!--底部 结束-->
+	<!--底部导航 开始-->
+	<!-- <ul class="footNav">
+		<li><a href="index.html"><img src="images/common/foot_ico1.png" /><span>网站首页</span></a></li>
+		<li><a href="about.html"><img src="images/common/foot_ico2.png" /><span>关于我们</span></a></li>
+		<li><a href="about.html"><img src="images/common/foot_ico3.png" /><span>联系我们</span></a></li>
+	</ul> -->
+	<!--底部导航 结束-->
+</div>
+<!--返回顶部 start-->
+<script type="text/javascript">
+(function() {
+	var jQuerybackToTopTxt = "TOP", jQuerybackToTopEle = jQuery('<div class="backToTop"></div>').appendTo(jQuery("body"))
+		.text(jQuerybackToTopTxt).attr("title", jQuerybackToTopTxt).click(function() {
+			jQuery("html, body").animate({ scrollTop: 0 }, 640);
+	}), jQuerybackToTopFun = function() {
+		var st = jQuery(document).scrollTop(), winh = jQuery(window).height();
+		(st > 0)? jQuerybackToTopEle.show(): jQuerybackToTopEle.hide();
+		//IE6下的定位
+		if (!window.XMLHttpRequest) {
+			jQuerybackToTopEle.css("top", st + winh - 166);
+		}
+	};
+	jQuery(window).bind("scroll", jQuerybackToTopFun);
+	jQuery(function() { jQuerybackToTopFun(); });
+})();
+</script>
+<!--返回顶部 end-->
+
+</body>
+</html>
